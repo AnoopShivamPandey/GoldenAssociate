@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222c4b</color>
+    <color name="colorPrimaryDark">#171e34</color>
+    <color name="colorAccent">#222c4b</color>
+ <!--  <color name="colorAccent">#D81B60</color>  222c4b-->
+    <color name="Goldenyellow">#FAAA1A</color>
+  <!--  <color name="Metallicgold">#D4AF37</color>-->
+    <color name="Metallicgold">#9c6c24</color>
+    <color name="Oldgold">#CFB53B</color>
+    <color name="Vegasgold">#C5B358</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="light_green">#8FD143</color>
+    <color name="grey">#BEBCBC</color>
+    <color name="blue">#009688</color>
+    <color name="green">#04910A</color>
+    <color name="red">#F44336</color>
+    <color name="darkgrey">#636363</color>
+</resources>

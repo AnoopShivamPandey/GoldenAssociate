@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/menuImg"
+            android:gravity="center"
+            android:text="Notification"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!--<android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="Eariler"
+        android:layout_below="@+id/header"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:id="@+id/txt1"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@color/grey"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        ></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="Later"
+        android:layout_below="@+id/rv_notify"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:id="@+id/txt2"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@color/grey"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_notifyseen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt2"
+
+        ></android.support.v7.widget.RecyclerView>
+    <!--</android.support.v4.widget.NestedScrollView>-->
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Ok,got it"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>
